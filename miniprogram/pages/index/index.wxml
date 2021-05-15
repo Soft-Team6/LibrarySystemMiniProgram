@@ -12,4 +12,11 @@
             <image src="../../images/lunbotu3.png" mode="widthFix|heightFix" />
         </swiper-item>
     </swiper>
+    <view class="menu">
+        <view class="menu-list" wx:for="{{menu.imgUrls}}" wx:key="*this">
+            <image class="menu-img" src="{{item}}" />
+            <view class="menu-keys">{{menu.keys[index]}}</view>
+        </view>
+    </view>
+    <view class="others">待开发ing</view>
 </view>

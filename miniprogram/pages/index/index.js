@@ -1,11 +1,24 @@
 // pages/index/index.js
 
 Page({
-
     /**
      * 页面的初始数据
      */
     data: {
+        menu: {
+            imgUrls: [
+                '../../icons/classify.png',
+                '../../icons/book.png',
+                '../../icons/rank.png',
+                '../../icons/notify.png'
+            ],
+            keys: [
+                '分类',
+                '书单',
+                '排行',
+                '通知'
+            ]
+        }
 
     },
 
