@@ -1,1 +1,35 @@
 /* pages/book/index.wxss */
+.book_exist {
+  margin: auto;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+.book_info {
+  display: flex;
+  text-align: left;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100rpx;
+}
+.book_info text {
+  user-select: auto;
+}
+.book_unexist {
+  margin: auto;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50%;
+}
+.book_error {
+  margin: auto;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  font-size: 60rpx;
+  font-weight: bold;
+}

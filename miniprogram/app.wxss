@@ -1,1 +1,11 @@
 @import "./styles/iconfont";
+
+page,view,text,swiper,image,navigator{
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+}
+/* 主题颜色 */
+page{
+    --themeColor:#1296db;
+}

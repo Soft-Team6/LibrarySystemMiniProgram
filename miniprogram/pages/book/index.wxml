@@ -1,2 +1,29 @@
-<!--pages/book/index.wxml-->
-<view>书本信息页面</view>
+<!-- pages/book/index.wxml -->
+<view wx:if="{{true}}">
+    <view class="book_exist">
+        <view class="book_info">
+            <text decode="{{true}}">
+                {{book.findNum}}: {{book.findNum}}
+                &nbsp;
+                {{book.bookNum}}: {{book.bookNum}}
+                &nbsp;
+                {{book.title}}: {{book.title}}
+                &nbsp;
+                {{book.writer}}: {{book.writer}}
+                &nbsp;
+                {{book.public}}: {{book.public}}
+                &nbsp;
+                {{book.publicTime}}: {{book.publicTime}}
+                &nbsp;
+                {{book.price}}: {{book.price}}
+                &nbsp;
+                {{book.status}}: {{book.status}}
+            </text>
+        </view>
+    </view>
+</view>
+<view wx:else>
+    <view class="book_unexist">
+        <text class="book_error">您查询的书籍不存在!</text>
+    </view>
+</view>

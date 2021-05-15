@@ -1,2 +1,7 @@
-<!--pages/search/index.wxml-->
-<view>搜索页面</view>
+<!-- pages/search/index.wxml -->
+<view>
+    <view class="search_input">
+        <input type="text" bindinput="handInput" placeholder="搜索" />
+    </view>
+    <view>展示输入的文本：{{text}}</view>
+</view>

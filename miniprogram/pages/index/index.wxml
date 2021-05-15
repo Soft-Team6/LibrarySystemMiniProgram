@@ -1,2 +1,15 @@
-<!--pages/index/index.wxml-->
-<view>主页</view>
+<!-- pages/index/index.wxml -->
+<view class="index">
+    <searchInput></searchInput>
+    <swiper autoplay="{{true}}" circular="{{true}}" interval="2000" indicator-dots="{{true}}" indicator-active-color="#1296db" indicator-color="#dbdbdb">
+        <swiper-item>
+            <image src="../../images/lunbotu1.png" mode="widthFix|heightFix" />
+        </swiper-item>
+        <swiper-item>
+            <image src="../../images/lunbotu2.png" mode="widthFix|heightFix" />
+        </swiper-item>
+        <swiper-item>
+            <image src="../../images/lunbotu3.png" mode="widthFix|heightFix" />
+        </swiper-item>
+    </swiper>
+</view>
