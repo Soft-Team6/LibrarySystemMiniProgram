@@ -1,43 +1,44 @@
 {
-  "pages": [
-    "pages/index/index",
-    "pages/login/index",
-    "pages/search/index",
-    "pages/book/index",
-    "pages/user/index"
-  ],
-  "window": {
-    "backgroundColor": "#F6F6F6",
-    "backgroundTextStyle": "dark",
-    "navigationBarBackgroundColor": "#1296db",
-    "navigationBarTitleText": "至诚图书管理系统",
-    "navigationBarTextStyle": "black",
-    "enablePullDownRefresh": true
-  },
-  "tabBar": {
-    "list": [
-      {
-        "pagePath": "pages/login/index",
-        "text": "登录",
-        "iconPath": "icons/log-in.png",
-        "selectedIconPath": "icons/log-in_hover.png"
-      },
-      {
-        "pagePath": "pages/index/index",
-        "text": "主页",
-        "iconPath": "icons/home.png",
-        "selectedIconPath": "icons/home_hover.png"
-      },
-      {
-        "pagePath": "pages/user/index",
-        "text": "用户",
-        "iconPath": "icons/user.png",
-        "selectedIconPath": "icons/user_hover.png"
-      }
+    "pages": [
+        "pages/book/index",
+        "pages/index/index",
+        "pages/login/index",
+        "pages/search/index",
+        "pages/book/bookinfo",
+        "pages/user/index"
     ],
-    "color": "#dbdbdb",
-    "selectedColor": "#1296db"
-  },
-  "style": "v2",
-  "sitemapLocation": "sitemap.json"
+    "window": {
+        "backgroundColor": "#F6F6F6",
+        "backgroundTextStyle": "dark",
+        "navigationBarBackgroundColor": "#1296db",
+        "navigationBarTitleText": "至诚图书管理系统",
+        "navigationBarTextStyle": "black",
+        "enablePullDownRefresh": true
+    },
+    "tabBar": {
+        "list": [
+            {
+                "pagePath": "pages/login/index",
+                "text": "登录",
+                "iconPath": "icons/log-in.png",
+                "selectedIconPath": "icons/log-in_hover.png"
+            },
+            {
+                "pagePath": "pages/index/index",
+                "text": "主页",
+                "iconPath": "icons/home.png",
+                "selectedIconPath": "icons/home_hover.png"
+            },
+            {
+                "pagePath": "pages/user/index",
+                "text": "用户",
+                "iconPath": "icons/user.png",
+                "selectedIconPath": "icons/user_hover.png"
+            }
+        ],
+        "color": "#dbdbdb",
+        "selectedColor": "#1296db"
+    },
+    "style": "v2",
+    "sitemapLocation": "sitemap.json"
 }

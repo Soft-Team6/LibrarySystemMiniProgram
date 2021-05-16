@@ -1,0 +1,13 @@
+/* pages/book/bookinfo.wxss */
+/* pages/book/index.wxss */
+.book_info {
+  margin: auto;
+  display: flex;
+  text-align: left;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100rpx;
+}
+.book_info text {
+  user-select: auto;
+}

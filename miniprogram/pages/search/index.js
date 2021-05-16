@@ -5,14 +5,27 @@ Page({
      * 页面的初始数据
      */
     data: {
-
+        input_text_value: null,
+        input_text_lenth: 0
     },
-    /*搜索框输入 */
-    handInput(e) {
-        console.log(e.detail.value);
-        this.setData({
-            text: e.detail.value
-        })
+
+    /**
+     * 获取输入框里的内容
+     */
+    input_text: function (e) {
+        console.log(e);
+        /**
+         * 获取输入的值
+         */
+        this.setData({ input_text_value: e.detail.value });
+        console.log(this.data.input_text_value);
+
+        /**
+         * 获取输入的值的长度
+         */
+        this.setData({ input_text_lenth: e.detail.cursor });
+        console.log(this.data.input_text_lenth);
+
     },
     /**
      * 生命周期函数--监听页面加载

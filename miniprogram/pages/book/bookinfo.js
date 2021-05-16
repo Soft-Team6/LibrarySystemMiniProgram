@@ -1,4 +1,4 @@
-// pages/book/index.js
+// pages/book/bookinfo.js
 Page({
 
     /**
@@ -6,21 +6,17 @@ Page({
      */
     data: {
         book: {
+            findNum: '索书号',
             bookNum: '图书条码',
             title: '书名',
             writer: '作者',
-            public: '出版社'
+            public: '出版社',
+            publicTime: '出版时间',
+            price: '价格',
+            status: '图书状态'
         }
     },
-    /**
-     * 点击跳转图书详情页面
-     */
-    onTap: function (e) {
-        wx.navigateTo({
-            url: '../../pages/book/bookinfo'
 
-        })
-    },
     /**
      * 生命周期函数--监听页面加载
      */

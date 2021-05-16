@@ -1,7 +1,6 @@
 <!-- pages/search/index.wxml -->
 <view>
     <view class="search_input">
-        <input type="text" bindinput="handInput" placeholder="搜索" />
+        <input type="text" placeholder="搜索" bindinput="input_text" />
     </view>
-    <view>展示输入的文本：{{text}}</view>
 </view>
