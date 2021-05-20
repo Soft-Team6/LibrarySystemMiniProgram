@@ -1,0 +1,12 @@
+<view class="login-container">
+  <image class="jpg" src='C:\Users\zzx\Desktop\jiaxin/logo.jpg'></image>
+  <view class="title">至诚图书馆</view>
+  <view class="login-box1">
+    <input placeholder="学号/工号"/>
+  </view>
+  <view class="login-box2"><input placeholder="密码"/></view>
+  <button class="login-btn">登录</button>
+    <view class="three-line">忘记密码？</view>
+    <view class="three-line" >游客登录</view>
+  
+</view>
