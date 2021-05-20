@@ -5,27 +5,44 @@ Page({
      * 页面的初始数据
      */
     data: {
-        book: {
-            bookNum: '图书条码',
-            title: '书名',
-            writer: '作者',
-            public: '出版社'
-        }
+        book: [],
+        bookList: []
     },
     /**
      * 点击跳转图书详情页面
      */
     onTap: function (e) {
+        var index = e.currentTarget.id;
+        // console.log(e);
+        // console.log(index);
+        var bookInfo = JSON.stringify(this.data.bookList[index]);
+        // console.log(bookInfo);
         wx.navigateTo({
-            url: '../../pages/book/bookinfo'
-
+            url: '../book/bookinfo?bookInfo=' + bookInfo
         })
     },
     /**
      * 生命周期函数--监听页面加载
      */
     onLoad: function (options) {
-
+        var bookList = JSON.parse(options.bookList);
+        this.setData({ bookList: bookList });
+        // console.log(bookList);
+        this.setData({ book: [] });
+        for (let index = 0; index < bookList.length; index++) {
+            var bookNum = bookList[index].bookNum;
+            var bookTitle = bookList[index].title;
+            var bookWriter = bookList[index].writer;
+            var bookPublic = bookList[index].public;
+            var bookDict = {
+                bookNum: bookNum,
+                title: bookTitle,
+                writer: bookWriter,
+                public: bookPublic
+            }
+            this.setData({ book: this.data.book.concat(bookDict) });
+        }
+        // console.log(this.data.book);
     },
 
     /**

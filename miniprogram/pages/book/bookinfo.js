@@ -5,23 +5,27 @@ Page({
      * 页面的初始数据
      */
     data: {
-        book: {
-            findNum: '索书号',
-            bookNum: '图书条码',
-            title: '书名',
-            writer: '作者',
-            public: '出版社',
-            publicTime: '出版时间',
-            price: '价格',
-            status: '图书状态'
-        }
+        book: []
     },
 
     /**
      * 生命周期函数--监听页面加载
      */
     onLoad: function (options) {
-
+        var bookInfo = JSON.parse(options.bookInfo);
+        // console.log(bookInfo);
+        var book_input = {
+            findNum: bookInfo.findNum,
+            bookNum: bookInfo.bookNum,
+            title: bookInfo.title,
+            writer: bookInfo.writer,
+            public: bookInfo.public,
+            publicTime: bookInfo.publicTime,
+            price: bookInfo.price,
+            status: bookInfo.status
+        }
+        this.setData({ book: book_input });
+        // console.log(this.data.book);
     },
 
     /**

@@ -1,14 +1,26 @@
 /* pages/book/index.wxss */
 .book_exist {
-    margin: auto;
+    margin: 10rpx auto;
     display: flex;
     text-align: center;
     align-items: center;
     justify-content: center;
-    float: left;
     clear: both;
-    margin-left: 50rpx;
+    background-color: #1296db;
+    flex-direction: column;
+    border-radius: 20rpx;
+
+    .changeline {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 20rpx;
+        width: 100%;
+        clear: both;
+    }
 }
+
+
 
 .book_info {
     display: flex;
@@ -16,6 +28,7 @@
     align-items: center;
     justify-content: center;
     margin-top: 20rpx;
+    flex-direction: row;
 
     text {
         user-select: auto;

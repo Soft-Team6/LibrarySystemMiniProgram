@@ -40,6 +40,7 @@
   "appid": "wx9dea2ae9364b0d45",
   "projectname": "LibrarySystem",
   "libVersion": "2.14.1",
+  "cloudfunctionTemplateRoot": "cloudfunctionTemplate",
   "condition": {
     "search": {
       "list": []

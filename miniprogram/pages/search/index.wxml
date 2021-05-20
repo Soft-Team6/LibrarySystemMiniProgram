@@ -1,6 +1,7 @@
 <!-- pages/search/index.wxml -->
 <view>
     <view class="search_input">
-        <input type="text" placeholder="搜索" bindinput="input_text" />
+        <input type="text" placeholder="搜索" bindinput="getValue" />
+        <button class="click" bindtap="search">搜索</button>
     </view>
 </view>
