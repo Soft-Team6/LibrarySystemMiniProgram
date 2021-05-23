@@ -1,0 +1,23 @@
+<!-- pages/index/index.wxml -->
+<view class="index">
+    <image class='background' src="../../images/backgroundimg4.jpg" mode="aspectFill"></image>
+    <searchInput></searchInput>
+    <swiper autoplay="{{true}}" circular="{{true}}" interval="2000" indicator-dots="{{true}}" indicator-active-color="#1296db" indicator-color="#dbdbdb">
+        <swiper-item>
+            <image src="../../images/lunbotu1.png" mode="widthFix|heightFix" />
+        </swiper-item>
+        <swiper-item>
+            <image src="../../images/lunbotu2.png" mode="widthFix|heightFix" />
+        </swiper-item>
+        <swiper-item>
+            <image src="../../images/lunbotu3.png" mode="widthFix|heightFix" />
+        </swiper-item>
+    </swiper>
+    <view class="menu">
+        <view class="menu-list" wx:for="{{menu.imgUrls}}" wx:key="*this">
+            <image class="menu-img" src="{{item}}" />
+            <view class="menu-keys">{{menu.keys[index]}}</view>
+        </view>
+    </view>
+    <view class="others">待开发ing</view>
+</view>

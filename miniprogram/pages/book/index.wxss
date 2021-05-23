@@ -1,0 +1,33 @@
+/* pages/book/index.wxss */
+.book_exist {
+  margin: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  clear: both;
+  background-color: #dbdbdb;
+  flex-direction: column;
+  border-radius: 20rpx;
+}
+.book_exist .book_info {
+  text-align: left;
+  margin-top: 20rpx;
+  flex-direction: column;
+  padding: 5%;
+}
+.book_exist .book_info text {
+  user-select: auto;
+  font-size: 40rpx;
+}
+.book_unexist {
+  margin: auto;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50%;
+}
+.book_unexist .book_error {
+  font-size: 60rpx;
+  font-weight: bold;
+}

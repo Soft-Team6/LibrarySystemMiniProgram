@@ -1,0 +1,23 @@
+<!-- pages/book/bookinfo.wxml -->
+<!-- pages/book/index.wxml -->
+<view>
+    <view class="book_info">
+        <text decode="{{true}}" user-select="{{true}}">
+            索书号: {{book.findNum}}
+            &nbsp;
+            图书条码: {{book.bookNum}}
+            &nbsp;
+            题名（书名）: {{book.title}}
+            &nbsp;
+            作者: {{book.writer}}
+            &nbsp;
+            出版社: {{book.public}}
+            &nbsp;
+            出版日期 {{book.publicTime}}
+            &nbsp;
+            价格: {{book.price}}
+            &nbsp;
+            图书状态（1：借出，0：在架可借阅）: {{book.status}}
+        </text>
+    </view>
+</view>
