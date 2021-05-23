@@ -1,0 +1,30 @@
+/* pages/search/index.wxss */
+.search_input {
+  height: 60rpx;
+  padding: 15rpx;
+  background-color: var(--themeColor);
+}
+.search_input input {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 15rpx;
+  text-align: center;
+  color: #000000;
+}
+.search_input .click {
+  height: 100%;
+  width: 200rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1296db;
+  border-radius: 15rpx;
+  margin-top: 30rpx;
+  text-align: center;
+  float: right;
+  position: relative;
+  color: #dbdbdb;
+}

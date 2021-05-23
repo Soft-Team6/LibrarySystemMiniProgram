@@ -1,0 +1,24 @@
+<!-- pages/book/index.wxml -->
+<view wx:if="{{book.length!=0}}">
+    <view class="book_exist" wx:for="{{book}}" wx:key="bookNum" bindtap="onTap" id="{{index}}">
+        <view>
+            <view class="book_info">
+                <text decode="{{true}}">图书条码:{{item.bookNum}}</text>
+            </view>
+            <view class="book_info">
+                <text decode="{{true}}">书名:{{item.title}}</text>
+            </view>
+            <view class="book_info">
+                <text decode="{{true}}">作者:{{item.writer}}</text>
+            </view>
+            <view class="book_info">
+                <text decode="{{true}}">出版社:{{item.public}}</text>
+            </view>
+        </view>
+    </view>
+</view>
+<view wx:else>
+    <view class="book_unexist">
+        <text class="book_error">您查询的书籍不存在!</text>
+    </view>
+</view>

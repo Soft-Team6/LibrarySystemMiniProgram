@@ -1,0 +1,56 @@
+/* pages/index/index.wxss */
+swiper {
+  width: 100%;
+  height: 300rpx;
+}
+swiper image {
+  width: 100%;
+  height: 100%;
+}
+.background {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-size: 100% 100%;
+  z-index: -1;
+  opacity: 0.8;
+}
+.menu {
+  margin: auto;
+  margin-top: 30rpx;
+  width: 100%;
+  color: #1296db;
+  text-align: center;
+}
+.menu .menu-list {
+  float: left;
+  margin: auto;
+  width: 25%;
+  box-sizing: border-box;
+  padding-bottom: 10rpx;
+}
+.menu .menu-img {
+  width: 100rpx;
+  height: 100rpx;
+  display: block;
+  margin: 20rpx auto;
+  margin-bottom: 10rpx;
+}
+.menu .menu-keys {
+  color: #ffffff;
+  width: 100%;
+  text-align: center;
+  display: block;
+  font-size: 12px;
+}
+.menu:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.others {
+  font-size: 100rpx;
+  margin: 0 auto;
+  text-align: center;
+  color: #ffffff;
+}
