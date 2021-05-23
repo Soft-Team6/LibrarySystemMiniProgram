@@ -5,36 +5,78 @@ Page({
      * 页面的初始数据
      */
     data: {
-
+        userId: null,
+        password: null
     },
-    isTrue: function () {
-        let key = this.data.inputText;
+    getId: function (e) {
+        // 获取输入框内容
+        this.setData({ userId: parseInt(e.detail.value) })
+    },
+    getPassword: function (e) {
+        // 获取输入框内容
+        this.setData({ password: parseInt(e.detail.value) })
+    },
+    onTap: function () {
         const db = wx.cloud.database();
         const _ = db.command;
-        //查询
-        db.collection('集合名').where(_.or([
-            {
-                属性名: _.eq(搜索框输入的值)  //eq为等于
-            },
-            {
-                属性名: _.eq(搜索框输入的值)
-            },
-            {
-                属性名: _.eq(搜索框输入的值)
-            },
-            //根据属性数量继续增加条件，将一个集合中的全部属性与搜索框输入的值比较
-        ]))
-            .get({
+        var userId = this.data.userId;
+        var password = this.data.password;
+        var app = getApp();
+        app.globalData.userId = userId;
+        if (this.data.userId == null || this.data.password == null) {
+            wx.showModal({
+                title: '温馨提示：',
+                content: '用户名或密码不能为空！',
+                showCancel: false
+            })
+        } else {
+            db.collection('userInfo').where(({
+                userId: _.eq(userId)
+            })).get({
                 success: function (res) {
-                    console.log(res.data)
+                    // console.log(res);
+                    // console.log(res.data[0].passWord);
+                    if (res.data.length == 0) {
+                        wx.showModal({
+                            title: '温馨提示：',
+                            content: '学号/工号错误'
+                        })
+                    }
+                    else {
+                        if (password == res.data[0].passWord) {
+                            wx.switchTab({
+                                url: '../index/index'
+                            })
+                        }
+                        else {
+                            wx.showModal({
+                                title: '温馨提示：',
+                                content: '密码错误'//session中用户名和密码不为空触发
+                            })
+                        }
+                    }
+                },
+                fail: function (err) {
+                    console.log(err);
                 }
             })
+        }
+    },
+    guestTap: function () {
+        var app = getApp();
+        app.globalData.userId = 'guest';
+        // console.log(app.globalData.userId);
+        wx.switchTab({
+            url: '../index/index'
+        })
     },
     /**
      * 生命周期函数--监听页面加载
      */
     onLoad: function (options) {
-
+        var app = getApp();
+        app.globalData.userId = null;
+        this.setData({ password: null })
     },
 
     /**

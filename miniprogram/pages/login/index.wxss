@@ -1,1 +1,48 @@
 /* pages/login/index.wxss */
+.login-container {
+  padding: 0 10%;
+  height: 100%;
+}
+.login-container .zcimage {
+  display: flex;
+  justify-content: center;
+}
+.login-container .zcimage image {
+  text-align: center;
+  padding-top: 10%;
+  width: 40%;
+  display: flex;
+  align-items: center;
+}
+.login-container .title {
+  font-size: 45rpx;
+  text-align: center;
+  padding-top: 5%;
+  font-weight: bold;
+  color: #1296db;
+}
+.login-container .login-input {
+  margin: 5% auto;
+  background-color: #dbdbdb;
+  color: #000000;
+  border-radius: 10px;
+  padding: 3%;
+  font-size: 15px;
+}
+.login-container .login-btn {
+  text-align: center;
+  justify-content: center;
+  margin-top: 15%;
+  width: 100%;
+  background-color: #1296db;
+  color: #ffffff;
+  font-weight: normal;
+}
+.login-container .other {
+  justify-content: center;
+  margin: 5% auto;
+  padding: 0;
+  text-align: center;
+  font-size: 14px;
+  color: #1296db;
+}

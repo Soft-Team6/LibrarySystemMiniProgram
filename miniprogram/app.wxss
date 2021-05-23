@@ -1,11 +1,19 @@
 @import "./styles/iconfont";
 
-page,view,text,swiper,image,navigator{
+page,
+view,
+text,
+swiper,
+image,
+navigator {
     padding: 0;
     margin: 0;
     box-sizing: 0;
+    font-family: 'Times New Roman', Times, serif;
+
 }
+
 /* 主题颜色 */
-page{
-    --themeColor:#1296db;
+page {
+    --themeColor: #1296db;
 }

@@ -1,5 +1,6 @@
 <!-- pages/index/index.wxml -->
 <view class="index">
+    <image class='background' src="../../images/backgroundimg4.jpg" mode="aspectFill"></image>
     <searchInput></searchInput>
     <swiper autoplay="{{true}}" circular="{{true}}" interval="2000" indicator-dots="{{true}}" indicator-active-color="#1296db" indicator-color="#dbdbdb">
         <swiper-item>

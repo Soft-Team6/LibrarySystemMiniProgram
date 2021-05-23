@@ -1,40 +1,30 @@
 /* pages/book/index.wxss */
 .book_exist {
-    margin: 10rpx auto;
+    margin: 10%;
     display: flex;
-    text-align: center;
+
     align-items: center;
     justify-content: center;
     clear: both;
-    background-color: #1296db;
+    background-color: #dbdbdb;
     flex-direction: column;
     border-radius: 20rpx;
 
-    .changeline {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 20rpx;
-        width: 100%;
-        clear: both;
+    .book_info {
+        text-align: left;
+        margin-top: 20rpx;
+        flex-direction: column;
+        padding: 5%;
+
+        text {
+            user-select: auto;
+            font-size: 40rpx;
+        }
+
     }
 }
 
 
-
-.book_info {
-    display: flex;
-    text-align: left;
-    align-items: center;
-    justify-content: center;
-    margin-top: 20rpx;
-    flex-direction: row;
-
-    text {
-        user-select: auto;
-    }
-
-}
 
 .book_unexist {
     margin: auto;
@@ -43,14 +33,9 @@
     align-items: center;
     justify-content: center;
     margin-top: 50%;
-}
 
-.book_error {
-    margin: auto;
-    display: flex;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    font-size: 60rpx;
-    font-weight: bold;
+    .book_error {
+        font-size: 60rpx;
+        font-weight: bold;
+    }
 }

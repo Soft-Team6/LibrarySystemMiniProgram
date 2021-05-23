@@ -24,6 +24,6 @@ App({
 
     },
     globalData: {
-
+        userId: null //用户信息
     }
 });

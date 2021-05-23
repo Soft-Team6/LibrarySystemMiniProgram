@@ -3,19 +3,18 @@
     <view class="book_exist" wx:for="{{book}}" wx:key="bookNum" bindtap="onTap" id="{{index}}">
         <view>
             <view class="book_info">
-                <text decode="{{true}}">{{item.bookNum}}</text>
+                <text decode="{{true}}">图书条码:{{item.bookNum}}</text>
             </view>
             <view class="book_info">
-                <text decode="{{true}}">{{item.title}}</text>
+                <text decode="{{true}}">书名:{{item.title}}</text>
             </view>
             <view class="book_info">
-                <text decode="{{true}}">{{item.writer}}</text>
+                <text decode="{{true}}">作者:{{item.writer}}</text>
             </view>
             <view class="book_info">
-                <text decode="{{true}}">{{item.public}}</text>
+                <text decode="{{true}}">出版社:{{item.public}}</text>
             </view>
         </view>
-        <view class="changeline"></view>
     </view>
 </view>
 <view wx:else>

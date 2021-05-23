@@ -1,11 +1,11 @@
 {
     "pages": [
         "pages/index/index",
+        "pages/login/index",
+        "pages/user/index",
         "pages/search/index",
         "pages/book/index",
-        "pages/login/index",
-        "pages/book/bookinfo",
-        "pages/user/index"
+        "pages/book/bookinfo"
     ],
     "window": {
         "backgroundColor": "#F6F6F6",
@@ -17,12 +17,6 @@
     },
     "tabBar": {
         "list": [
-            {
-                "pagePath": "pages/login/index",
-                "text": "登录",
-                "iconPath": "icons/log-in.png",
-                "selectedIconPath": "icons/log-in_hover.png"
-            },
             {
                 "pagePath": "pages/index/index",
                 "text": "主页",
